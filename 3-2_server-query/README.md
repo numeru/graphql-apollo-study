@@ -1,13 +1,12 @@
-const database = require('./database')
-const { ApolloServer, gql } = require('apollo-server')
-​
+# Query
+
+```
 const typeDefs = gql`
     type Query {
-        teams: [Team]
-        team(id: Int): Team
-        equipments: [Equipment]
+        teams: [Team] // Team형태의 정보를 여러개 가져온다.
         supplies: [Supply]
     }
+
     type Team {
         id: Int
         manager: String
@@ -17,17 +16,12 @@ const typeDefs = gql`
         cleaning_duty: String
         project: String
     }
-    type Equipment {
-      id: String
-      used_by: String
-      count: Int
-      new_or_used: String
-    }
     type Supply {
       id: String,
       team: Int
     }
 `
+
 const resolvers = {
   Query: {
     teams: () => database.teams
@@ -37,18 +31,14 @@ const resolvers = {
             return supply.team === team.id
         })
         return team
-    }),
+    }), // teams와 supplies를 한번에 가져온다.
+
     team: (parent, args, context, info) => database.teams
     .filter((team) => {
         return team.id === args.id
-    })[0],
-    equipments: () => database.equipments,
+    })[0], // 입력한 id를 갖는 team만 불러온다.
+
     supplies: () => database.supplies
   }
 }
-​
-const server = new ApolloServer({ typeDefs, resolvers })
-​
-server.listen().then(({ url }) => {
-console.log(`🚀  Server ready at ${url}`)
-})
+```
