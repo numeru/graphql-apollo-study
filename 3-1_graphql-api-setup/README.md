@@ -1,3 +1,5 @@
+# GraphQL server setup
+
 ```
 npm init
 
@@ -10,7 +12,7 @@ npm i graphql
 npm i apollo-server
 ```
 
-# GraphQL server setup
+---
 
 - ApolloServer
   typeDef와 resolver를 인자로 받아서 서버생성.
