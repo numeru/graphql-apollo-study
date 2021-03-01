@@ -1,5 +1,15 @@
 # React with Apollo
 
+- 2_graphql과 5-1_react-with-apollo를 실행
+
+```
+// 2_graphql
+nodemon index.js
+
+// 5-1_react-with-apollo
+yarn start
+```
+
 ## 1. Apollo Client 설치
 
 [Apollo Client](https://www.apollographql.com/docs/react/get-started/)
