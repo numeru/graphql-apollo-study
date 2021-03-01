@@ -29,3 +29,7 @@ npm start
 #### - [Mutation](https://github.com/numeru/graphql-apollo-study/tree/main/3-3_server-mutation)
 
 #### - [Modularized](https://github.com/numeru/graphql-apollo-study/tree/main/4-1_server-modularized)
+
+#### - [types](https://github.com/numeru/graphql-apollo-study/tree/main/4-2_types)
+
+#### - [union and interface](https://github.com/numeru/graphql-apollo-study/tree/main/4-3_union-interface)
