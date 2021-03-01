@@ -16,9 +16,9 @@ npm start
 
 ## 2. GraphQL
 
-### 0. GraphQL 맛보기
+### 0. 완성본
 
-#### - [PlayGround](https://github.com/numeru/graphql-apollo-study/tree/main/2_graphql)
+#### - [backend](https://github.com/numeru/graphql-apollo-study/tree/main/2_graphql)
 
 ### 1. Server에서의 GraphQL
 
