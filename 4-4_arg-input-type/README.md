@@ -54,7 +54,7 @@ const typeDefs = gql`
 ```
 // id가 1~7인 정보를 불러온다.
 query {
-	peoplePaginated(page: 1, per_page: 7) {
+  peoplePaginated(page: 1, per_page: 7) {
     id
     first_name
     last_name
