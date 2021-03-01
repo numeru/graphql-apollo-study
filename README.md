@@ -32,10 +32,10 @@ npm start
 
 - [Modularized](https://github.com/numeru/graphql-apollo-study/tree/main/4-1_server-modularized)
 
-- [types](https://github.com/numeru/graphql-apollo-study/tree/main/4-2_types)
+- [Types](https://github.com/numeru/graphql-apollo-study/tree/main/4-2_types)
 
-- [union and interface](https://github.com/numeru/graphql-apollo-study/tree/main/4-3_union-interface)
+- [Union and Interface](https://github.com/numeru/graphql-apollo-study/tree/main/4-3_union-interface)
 
-- [arg and input type](https://github.com/numeru/graphql-apollo-study/tree/main/4-4_arg-input-type)
+- [Arg and Input type](https://github.com/numeru/graphql-apollo-study/tree/main/4-4_arg-input-type)
 
 ### 2. React에서의 GraphQL
