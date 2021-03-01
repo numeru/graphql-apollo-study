@@ -15,3 +15,5 @@
 #### - [Setup](https://github.com/numeru/graphql-apollo-study/tree/main/3-1_graphql-api-setup)
 
 #### - [Query](https://github.com/numeru/graphql-apollo-study/tree/main/3-2_server-query)
+
+#### - [Mutation](https://github.com/numeru/graphql-apollo-study/tree/main/3-3_server-mutation)
