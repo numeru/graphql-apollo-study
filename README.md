@@ -1,5 +1,15 @@
 # GraphQL
 
+- 모든 파일은 playground가 실행됩니다.
+
+```
+npm install
+
+npm start
+```
+
+---
+
 ## 1. REST API
 
 - [REST API의 한계](https://github.com/numeru/graphql-apollo-study/tree/main/1_rest-api)
