@@ -49,7 +49,7 @@ return (
 );
 ```
 
-## 5. add query or mutation
+## 5. query, mutation 추가
 
 ```
 import { useQuery, useMutation, gql } from "@apollo/client";
@@ -75,7 +75,7 @@ const DELETE_TEAM = gql`
 `;
 ```
 
-## 6. 필요한 곳에서 query, mutation실행
+## 6. 필요한 곳에서 query, mutation 실행
 
 ### 1. query
 
@@ -128,7 +128,7 @@ refetchTeams();
 
 - useMutation을 사용하여 작업을 수행한다.
 
-1. 필요한 인자를 mutation 함수인 deleteTeam에 전달하며 실행한다.
+#### 1. 필요한 인자를 mutation 함수인 deleteTeam에 전달하며 실행한다.
 
 ```
 // click할 때 실행
@@ -139,7 +139,7 @@ function execDeleteTeam() {
 }
 ```
 
-2. useMutation형식에 맞게 인자 전달.
+#### 2. useMutation형식에 맞게 인자 전달.
 
 ```
 const [deleteTeam] = useMutation(DELETE_TEAM, {
@@ -148,7 +148,7 @@ const [deleteTeam] = useMutation(DELETE_TEAM, {
 
 ```
 
-3. 성공 후 onCompleted에 전달했던 함수가 실행된다.
+#### 3. 성공 후 onCompleted에 전달했던 함수가 실행된다.
 
 ```
 function deleteTeamCompleted(data) {
