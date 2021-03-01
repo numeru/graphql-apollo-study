@@ -8,5 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "choi",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.21.0",
+    "convert-csv-to-json": "^1.3.0",
+    "graphql": "^15.5.0"
+  }
 }
