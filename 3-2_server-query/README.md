@@ -1,6 +1,7 @@
 # Query
 
 ```
+// index.js
 const typeDefs = gql`
     type Query {
         teams: [Team] // Team형태의 정보를 여러개 가져온다.
