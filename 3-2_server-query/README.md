@@ -49,7 +49,7 @@ const resolvers = {
 ```
 // id가 1인 team정보 불러오기
 query {
-team(id: 1) {
+  team(id: 1) {
     id
     manager
     office
@@ -57,6 +57,6 @@ team(id: 1) {
     mascot
     cleaning_duty
     project
-}
+  }
 }
 ```
