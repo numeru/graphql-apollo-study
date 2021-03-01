@@ -80,8 +80,8 @@ query {
     last_name
     sex
     blood_type
-  }
-  newYorkers: peopleFiltered(from: "New York") {
+}
+newYorkers: peopleFiltered(from: "New York") {
     first_name
     last_name
     from
