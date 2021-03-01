@@ -158,3 +158,69 @@ function deleteTeamCompleted(data) {
   setContentId(0);
 }
 ```
+
+---
+
+# Fragment
+
+- 여러 쿼리에 사용될 수 있는, 재사용 가능한 필드셋
+- 중복을 줄임으로써 전체 코드를 간소화
+
+```
+const Names = gql`
+  fragment names on People {
+    first_name
+    last_name
+  }
+`;
+const HealthInfo = gql`
+  fragment healthInfo on People {
+    sex
+    blood_type
+  }
+`;
+const WorkInfo = gql`
+  fragment workInfo on People {
+    serve_years
+    role
+    team
+    from
+  }
+`;
+
+const GET_PEOPLE = gql`
+  query GetPeople {
+    people {
+      id
+      ...names
+      ...healthInfo
+    }
+  }
+  ${Names}
+  ${HealthInfo}
+`;
+
+const GET_PERSON = gql`
+  query GetPerson($id: ID!) {
+    person(id: $id) {
+      id
+      ...names
+      ...healthInfo
+      ...workInfo
+      tools {
+        __typename
+        ... on Software {
+          id
+        }
+        ... on Equipment {
+          id
+          count
+        }
+      }
+    }
+  }
+  ${Names}
+  ${HealthInfo}
+  ${WorkInfo}
+`;
+```
