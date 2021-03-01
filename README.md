@@ -33,3 +33,5 @@ npm start
 #### - [types](https://github.com/numeru/graphql-apollo-study/tree/main/4-2_types)
 
 #### - [union and interface](https://github.com/numeru/graphql-apollo-study/tree/main/4-3_union-interface)
+
+#### - [arg and input type](https://github.com/numeru/graphql-apollo-study/tree/main/4-4_arg-input-type)
